@@ -35,3 +35,13 @@ body {
     align-items: center;  
     gap: 16px;  
 }
+
+.gatito{    
+        background: url('img/sleepingCat.jpg') no-repeat;        
+        
+            
+}
+
+.gatito-title{
+    color:white;
+}
