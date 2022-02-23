@@ -126,6 +126,13 @@ body {
     border-radius: 8px;
   }
   
+  footer{
+    background-color: var(--bg-primary);
+  }
+
+  footer a{
+    color: #7a4831; 
+  }
   @media (min-width: 598px) {
     .header--title {
       display: none;
@@ -144,4 +151,6 @@ body {
       display: flex;
     }
   }
+
+
   
