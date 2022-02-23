@@ -1,47 +1,122 @@
-
+/* pseudo selectores y otros especiales */
 :root {
-    --primary: #f2b366;
-  }
+  --primary: #f2b366;
+  --secondary: #3f2f21;
+  --bg-primary: rgba(190, 183, 171, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Selectores por Tag */
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .header {
-    background-color: rgba(190, 183, 171, 0.3);
-    padding: 2ch;
-  }
-  
-  .header--title {
-    color: var(--primary);
-    text-transform: uppercase;
-    text-shadow: 2px 2px black;
-    text-align: center;
-  }
-  
-  .menu--item {
-    text-decoration: none;
-    padding: 0.2rem;
-    background-color:#3f2f21 ;
-    color: var(--primary);
-    border-radius: 14px;
-    width: 150px;
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu{
+/* Selectores de clase */
+
+.header {
+  background-color: var(--bg-primary);
+  padding: 2ch;
+}
+
+.header--title {
+  color: var(--primary);
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+
+.menu--item {
+  text-decoration: none;
+  padding: 0.2rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-radius: 14px;
+  width: 150px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.gatito{  
+  height: 50vh;  
+  background-image: url(/img/gatodor.png );  
+  background-size: cover; 
+  color: white;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+}
+
+
+.members {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.members--card { 
+    height: 200px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
-    align-items: center;  
-    gap: 16px;  
-}
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 43%);
+    width: 100%;
+    padding: 5px;
+  }
 
-.gatito{    
-        background: url('img/sleepingCat.jpg') no-repeat;        
-        
-            
-}
+  .card--patricia {
+  background: url("./img/patricia.png") no-repeat center 10%,
+  url("./img/patitas.png")
+  }
 
-.gatito-title{
-    color:white;
-}
+  .card--veronica {
+    background: url("./img/veronica.png") no-repeat center 10%,
+    url("./img/patitas.png");
+    }
+    .card--edurne {
+      background: url("./img/edurne.png") no-repeat center 10%,
+      url("./img/patitas.png");
+      }
+
+
+  .members--title {
+    text-align: center;
+  }
+  
+  .members--name {
+    color: var(--secondary);
+  }
+  
+  .members--name,
+  .members--role {
+    margin: 0;
+  }
+  
+  .members--role {
+    color: white;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 6px;
+    border-radius: 8px;
+  }
+  
