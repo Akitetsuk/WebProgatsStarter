@@ -56,7 +56,9 @@ body {
   background-image: url(/img/gatodor.png );  
   background-size: cover; 
   color: white;
-  font-size: 5vw;
+   /* idealmente quiero el tamaño del texto un 5% del viewpoer, pero no disminuyas más de 2rem y nunca aumentes más de 4rem*/
+  font-size: clam(1rem, 5vw, 3rem);
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: flex-end;
