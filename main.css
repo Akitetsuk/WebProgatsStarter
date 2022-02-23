@@ -22,6 +22,10 @@ body {
   padding: 2ch;
 }
 
+.header--logo {
+  display: none;
+}
+
 .header--title {
   color: var(--primary);
   text-transform: uppercase;
@@ -118,5 +122,24 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 6px;
     border-radius: 8px;
+  }
+  
+  @media (min-width: 598px) {
+    .header--title {
+      display: none;
+    }
+
+    .header--logo {
+      display: inline-block;
+      width: 100px;
+    }
+
+    .menu {
+      flex-direction: row;
+    }
+
+    .header{
+      display: flex;
+    }
   }
   
