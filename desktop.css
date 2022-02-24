@@ -1,0 +1,52 @@
+#swipeUp {
+    display: none;
+  }
+
+.header {
+    padding: 0;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+
+.header--logo {
+    display: none;
+  }
+
+ 
+ 
+  .header--title {
+    margin: 0;
+    display: block;
+  }
+
+  .menu {
+    align-items: stretch;
+    gap: 0;
+    height: 10vh;
+  }
+
+  .menu a {
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .gatito {
+    align-items: center;
+  }
+  
+  .members {
+    flex-direction: row;
+  }
+  
+  .members--card {
+    transition: transform 0.5s;
+  }
+  
+  .members--card:hover {
+    transform: scale(1.2);
+  }
